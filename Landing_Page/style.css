@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url('images/eventp.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-family: cursive;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.27s linear;
+}
+
+.menu a:hover::before {
+    width: 90%;
+}
+.Book_now a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: indianred;
+    border-radius: 9px;
+    transition: 0.1s;
+}
+
+.Book_now a:hover {
+    background: transparent;
+    border: 2px solid indianred;
+    color: indianred;
+}
+
+.h-txt{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(237, 235, 233);
+    text-align: center;
+}
+
+.h-txt h1{
+    font-size: 2.5em;
+}
+
+.h-txt a{
+    text-decoration: none;
+    background-color: indianred;
+    border-radius: 9px;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    transition: 0.1s;
+}
+
+.h-txt a:hover {
+    background: transparent;
+    border: 2px solid indianred;
+    
+    
+}
+
+.about-us {
+    background-color: #f9f9f9;
+    padding: 25px 50px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    color: #282424;
+}
